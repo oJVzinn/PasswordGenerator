@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<span class="title">PASSWORD GENERATOR</span>
+<div class="container">
+    <span class="text">Qual o tamanho da sua senha?</span>
+    <input type="number" class="textInput" max="20" placeholder="Tamanho" id="size">
+    <button class="button" onclick="generatePassword()">Gerar senha</button>
+</div>
+<div class="container">
+    <span class="text" id="passGen">Senha gerada: ...</span>
+    <button class="button" onclick="copyPassword()">Copiar</button>
+</div>
+</body>
+</html>
